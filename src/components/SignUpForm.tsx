@@ -19,7 +19,7 @@ const SignUpForm = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/contact-us/v1", {
+      const response = await fetch("https://contact-us-backend-ufvx.onrender.com/contact-us/v1", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
