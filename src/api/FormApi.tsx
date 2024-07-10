@@ -1,5 +1,5 @@
 // api.tsx (or api.js if using JavaScript)
-
+const BACKEND_URL = import.meta.env.VITE_API_BASE_URL || "";
 export const FormApi = async (formData: {
   topic: string;
   name: string;
@@ -8,7 +8,7 @@ export const FormApi = async (formData: {
 }) => {
   try {
     const response = await fetch(
-      "https://contact-us-backend-ufvx.onrender.com/contact-us/v1",
+      `${BACKEND_URL}/contact-us/v1`,
       {
         method: "POST",
         headers: {

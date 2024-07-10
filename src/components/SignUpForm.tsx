@@ -129,7 +129,7 @@ const SignUpForm = () => {
           className="bg-[#5AA7A0] rounded-md text-black align-middle p-3"
           type="submit"
         >
-          Submit Query
+          Submit Issue
         </button>
       </form>
     </div>
