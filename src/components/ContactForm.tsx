@@ -1,9 +1,9 @@
 import { FormEvent, useState } from "react";
-import { useToastContext } from "../context/ToastContext";
+import { useToastContext } from "../context/ToastContext.tsx";
 
 import { FormApi } from "../api/FormApi.tsx";
 
-const SignUpForm = () => {
+const ContactForm = () => {
   const { showToast } = useToastContext();
   const [topic, setTopic] = useState("");
   const [name, setName] = useState("");
@@ -59,7 +59,7 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="text-[#FFFFFF80] max-w-md w-full">
+    <div className="text-[#FFFFFF80]  w-full h-full max-w-md bg-black">
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <div className="flex flex-col gap-1">
           <label htmlFor="topic">Topic</label>
@@ -129,11 +129,11 @@ const SignUpForm = () => {
           className="bg-[#5AA7A0] rounded-md text-black align-middle p-3"
           type="submit"
         >
-          Submit Issue
+          Submit Query
         </button>
       </form>
     </div>
   );
 };
 
-export default SignUpForm;
+export default ContactForm;

@@ -58,7 +58,7 @@ const IssuePage = () => {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen container mx-auto flex flex-col items-center p-4">
+    <div className="bg-black text-white min-h-screen flex flex-col items-center p-4">
       <div className="flex justify-between mb-4 w-full">
         <div className="flex-1 flex items-center justify-center m-2">
           <button
@@ -95,6 +95,7 @@ const IssuePage = () => {
                   <p className="mb-2"><strong>Email:</strong> {issue.email}</p>
                   <p className="mb-2"><strong>Message:</strong> {issue.message}</p>
                   <p className="mb-2"><strong>Status:</strong> {issue.status}</p>
+                  <p className="mb-2"><strong>Topic:</strong> {issue.topic}</p>
                   <div className="flex justify-end">
                     {issueType === 'pending' && (
                       <button

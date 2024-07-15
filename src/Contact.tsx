@@ -1,9 +1,9 @@
 import { IoChatboxEllipsesOutline, IoCallOutline } from "react-icons/io5";
-import SignUpForm from "./components/SignUpForm";
+import SignUpForm from "./components/ContactForm";
 
 const Contact = () => {
   return (
-    <div className="bg-black font-sans p-6 sm:p-10 md:p-20 sm:px-10 md:px-20 lg:px-40 w-full h-full flex flex-col sm:flex-row justify-between text-white">
+    <div className="bg-black font-sans sm:p-10 md:p-20 sm:px-10 md:px-20 lg:px-40 w-full min-h-screen flex flex-col sm:flex-row justify-between text-white">
       <div className="w-full max-w-md mb-10 sm:mb-0">
         <div className="pb-10 sm:pb-20">
           <h1 className="font-bold text-xl sm:text-2xl pb-4">
